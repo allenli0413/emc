@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20px"
+    android:paddingRight="20px"
+    android:paddingTop="10px"
+    android:paddingBottom="10px">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_adapter_quality_contrast_content_title_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="采摘方式："
+            android:textColor="@color/gray_text"
+            android:textSize="24px"/>
+
+        <TextView
+            android:id="@+id/tv_adapter_quality_contrast_content_content_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手摘棉手摘棉手摘棉"
+            android:layout_marginLeft="5px"
+            android:textColor="@color/c4"
+            android:textSize="24px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_adapter_quality_contrast_content_title_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="采摘方式："
+            android:textColor="@color/gray_text"
+            android:textSize="24px"/>
+
+        <TextView
+            android:id="@+id/tv_adapter_quality_contrast_content_content_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手摘棉手摘棉手摘棉"
+            android:layout_marginLeft="5px"
+            android:textColor="@color/c4"
+            android:textSize="24px" />
+
+    </LinearLayout>
+
+</LinearLayout>

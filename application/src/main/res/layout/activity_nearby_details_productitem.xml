@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/enterprise_resource_number_1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            style="@style/line_h"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65px"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <TextView
+                android:id="@+id/enterprise_resource_number_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25px"
+                android:layout_marginRight="20px"
+                android:layout_gravity="center_vertical" />
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="20px"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/enterprise_resource_red_paper_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="24px" />
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_enterprise_location"
+                android:layout_width="55px"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+            <ImageView
+                android:layout_width="35px"
+                android:layout_height="35px"
+                android:src="@drawable/icon_shouye_dw"
+                android:layout_gravity="center_vertical"
+                android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

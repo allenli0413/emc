@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/green">
+        <ImageView
+            android:id="@+id/left_image"
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/title_image_margin"
+            android:gravity="center_vertical"
+            android:scaleType="center"
+            android:layout_marginLeft="@dimen/padding"
+            android:src="@drawable/back_icon_selector"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/collect_layout"
+            android:layout_width="320px"
+            android:layout_height="60px"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/collect_cotton"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/background_collect_btn_select"
+                android:textColor="@color/green"
+                android:text="棉花收藏"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/collect_enterprise"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="棉企收藏"
+                android:gravity="center"
+                android:background="@drawable/background_collect_btn_not_select_1"/>
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/bottom_bar_view"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+</LinearLayout>

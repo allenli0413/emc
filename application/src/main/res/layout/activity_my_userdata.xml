@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1">
+    <View style="@style/line_h"/>
+    <RelativeLayout
+        android:id="@+id/user_data_avater"
+        android:layout_width="match_parent"
+        android:layout_height="135px"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="头像"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:textColor="@color/c2" />
+        <ImageView
+            android:id="@+id/iv_nicheng_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:src="@drawable/icon_goto" />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/my_user_data_avater"
+            android:layout_width="105px"
+            android:layout_height="105px"
+            fresco:placeholderImage="@drawable/default_avater"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="true"
+            android:clickable="true"
+            android:layout_marginRight="5px"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_nicheng_goto"
+            android:layout_toStartOf="@+id/iv_nicheng_goto" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+    <RelativeLayout
+        android:id="@+id/user_data_name"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="联系人"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:textColor="@color/c2" />
+
+        <ImageView
+            android:id="@+id/user_name_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="15px"
+            android:src="@drawable/icon_goto" />
+
+        <TextView
+            android:id="@+id/my_user_data_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/user_name_goto"
+            android:text="未填写"
+            android:textSize="30px"
+            android:textColor="@color/c5" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+    <RelativeLayout
+        android:id="@+id/user_data_phone"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="手机号码"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:textColor="@color/c2" />
+
+        <ImageView
+            android:id="@+id/user_phone_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="15px"
+            android:src="@drawable/icon_goto" />
+
+        <TextView
+            android:id="@+id/my_user_data_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/user_phone_goto"
+            android:textSize="30px"
+            android:textColor="@color/c5" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/user_type_admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View style="@style/line_h"
+            android:layout_marginTop="20px"/>
+        <RelativeLayout
+            android:id="@+id/user_data_enterprise"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="企业信息"
+                android:layout_marginLeft="20px"
+                android:textSize="35px"
+                android:textColor="@color/c2" />
+
+            <ImageView
+                android:id="@+id/user_enterprise_goto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="15px"
+                android:src="@drawable/icon_goto" />
+            <TextView
+                android:id="@+id/my_user_data_enterprise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/user_enterprise_goto"
+                android:textSize="30px"
+                android:text="企业名称"
+                android:textColor="@color/c5" />
+        </RelativeLayout>
+        <View style="@style/line_h"/>
+
+        <RelativeLayout
+            android:id="@+id/user_data_salesman"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="业务员管理"
+                android:layout_marginLeft="20px"
+                android:textSize="35px"
+                android:textColor="@color/c2" />
+
+            <ImageView
+                android:id="@+id/user_salesman_goto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="15px"
+                android:src="@drawable/icon_goto" />
+            <TextView
+                android:id="@+id/my_user_data_salesman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/user_salesman_goto"
+                android:textSize="30px"
+                android:text="0"
+                android:textColor="@color/c5" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_user_type_salesman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View style="@style/line_h"
+            android:layout_marginTop="20px"/>
+        <RelativeLayout
+            android:id="@+id/user_data_account"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="企业账号"
+                android:layout_marginLeft="20px"
+                android:textSize="35px"
+                android:textColor="@color/c2" />
+
+            <ImageView
+                android:id="@+id/user_account_goto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="15px"
+                android:src="@drawable/icon_goto" />
+            <TextView
+                android:id="@+id/my_user_data_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/user_account_goto"
+                android:textSize="30px"
+                android:text="企业账号申请"
+                android:textColor="@color/c5" />
+            <View style="@style/line_h"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/user_data_binding"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="企业绑定"
+                android:layout_marginLeft="20px"
+                android:textSize="35px"
+                android:textColor="@color/c2" />
+
+            <ImageView
+                android:id="@+id/user_binding_goto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5px"
+                android:layout_marginRight="15px"
+                android:src="@drawable/icon_goto" />
+            <TextView
+                android:id="@+id/my_user_data_binding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/user_binding_goto"
+                android:textSize="30px"
+                android:text="未绑定"
+                android:textColor="@color/c5" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View style="@style/line_h"/>
+
+</LinearLayout>

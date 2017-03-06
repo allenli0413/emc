@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 填充 -->
+    <!--<solid android:color="@color/red_color" />-->
+    <!--&lt;!&ndash; 定义填充的颜色值 &ndash;&gt;-->
+    <!--<corners android:radius="8px" />-->
+    <!--&lt;!&ndash; 设置四个角的半径 &ndash;&gt;-->
+    <stroke
+        android:width="1px"
+        android:color="@color/black"
+        />
+    <padding
+        android:top="1px"
+        android:bottom="1px"
+        android:right="1px"
+        android:left="1px"/>
+    <!-- 间隔 -->
+    <!-- 设置各个方向的间隔 -->
+</shape>

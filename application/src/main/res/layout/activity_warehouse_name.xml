@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85px"
+        android:orientation="horizontal"
+        android:background="@color/green_text">
+        <ImageView
+            android:id="@+id/iamge"
+            android:layout_gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/title_image_margin"
+            android:gravity="center_vertical"
+            android:scaleType="center"
+            android:layout_marginLeft="@dimen/padding"
+            android:src="@drawable/back_icon_selector"/>
+
+        <EditText
+            android:id="@+id/edit_title_search_middle"
+            android:layout_width="0dp"
+            android:layout_height="54px"
+            android:layout_weight="1"
+            android:hint="输入仓库名称进行搜索"
+            android:textSize="26px"
+            android:textColorHint="#cecece"
+            android:paddingLeft="10px"
+            android:drawablePadding="13px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10px"
+            android:layout_marginLeft="10px"
+            android:drawableLeft="@drawable/icon_search"
+            android:background="@drawable/bg_edit_search"/>
+        <TextView
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginRight="10px"
+            />
+    </LinearLayout>
+    <cn.appsdream.nestrefresh.normalstyle.NestRefreshLayout
+        android:id="@+id/nestRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+    </cn.appsdream.nestrefresh.normalstyle.NestRefreshLayout>
+</LinearLayout>

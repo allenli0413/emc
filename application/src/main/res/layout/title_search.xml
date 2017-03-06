@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:background="@color/green"
+    android:gravity="center_vertical"
+    android:id="@+id/ll_title_search">
+
+    <LinearLayout
+        android:id="@+id/ll_title_search_total_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20px"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="20px"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_title_search_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="乌鲁木齐"
+            android:textColor="@color/white"
+            android:textSize="26px" />
+
+        <ImageView
+            android:id="@+id/iv_title_search_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:src="@drawable/city_arrow"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true">
+
+    <EditText
+        android:id="@+id/edit_title_search_middle"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="54px"
+        android:hint="输入批号搜索"
+        android:textSize="26px"
+        android:textColorHint="#cecece"
+        android:paddingLeft="10px"
+        android:layout_marginLeft="20px"
+        android:drawablePadding="13px"
+        android:drawableLeft="@drawable/icon_search"
+        android:background="@drawable/background_edit_search"/>
+
+        <TextView
+            android:id="@+id/tv_title_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textSize="30px"
+            android:textColor="@color/green"
+            android:layout_marginRight="20px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title_search_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/filter"
+        android:layout_margin="20px"
+        android:orientation="horizontal"/>
+
+</LinearLayout>

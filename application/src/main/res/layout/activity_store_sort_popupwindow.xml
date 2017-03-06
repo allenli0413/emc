@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#33000000">
+
+    <LinearLayout
+        android:id="@+id/ll_store_sort_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_store_sort_multiple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="综合排序"
+            android:textSize="32px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:textColor="@drawable/button_word_store_filter_type"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_store_sort_lowest_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="价格最低"
+            android:textSize="32px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:textColor="@drawable/button_word_store_filter_type"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_store_sort_highest_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="价格最高"
+            android:textSize="32px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:textColor="@drawable/button_word_store_filter_type"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_store_sort_storge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="存放仓库"
+            android:textSize="32px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:textColor="@drawable/button_word_store_filter_type"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_store_sort_factory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="加工厂"
+            android:textSize="32px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:textColor="@drawable/button_word_store_filter_type"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_store_sort_publish_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="发布时间"
+            android:textSize="32px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:textColor="@drawable/button_word_store_filter_type"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_store_sort_suppiler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="供货商"
+            android:textSize="32px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"
+            android:textColor="@drawable/button_word_store_filter_type"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

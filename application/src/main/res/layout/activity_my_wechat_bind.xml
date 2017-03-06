@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="none">
+
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/tv_my_wechat_bind_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微信账号未绑定"
+        android:textSize="34px"
+        android:layout_marginTop="60px"
+        android:textColor="@color/c2"/>
+
+    <ImageView
+        android:id="@+id/iv_my_wechat_bind_status"
+        android:layout_width="168px"
+        android:layout_height="168px"
+        android:src="@drawable/weixin_btn"
+        android:layout_marginTop="25px"
+        android:layout_marginBottom="20px"/>
+
+    <LinearLayout
+        android:id="@+id/ll_my_wechat_unbind_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红包棉功能只有绑定微信后才可使用"
+            android:textSize="34px"
+            android:textColor="@color/c6"
+            android:layout_marginBottom="40px"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:orientation="vertical"
+                android:layout_marginTop="60px"
+                android:layout_marginBottom="40px"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_my_wechat_bind_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_wechat_pic"
+                    android:paddingLeft="50px"
+                    android:paddingRight="50px"
+                    android:paddingTop="30px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="长按二维码保存到手机"
+                    android:textColor="@color/white"
+                    android:textSize="34px"
+                    android:layout_marginBottom="10px"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"
+                    android:layout_marginTop="10px"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40px"
+            android:paddingLeft="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20px"
+                android:text="如何绑定公众号？"
+                android:textSize="38px"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.长按上面的二维码保存至手机，之后打开微信扫一扫，在相册中选取保存的二维码，关注公众号。"
+                android:textColor="@color/c5"
+                android:textSize="34px"
+                android:lineSpacingExtra="20px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginLeft="20px"
+                android:text="（也可以搜索微信公众号名称emiancang进行关注）"
+                android:textColor="@color/c5"
+                android:textSize="34px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:text="2.关注公众号后点击菜单绑定管理进入绑定界面，输入账号和密码即可绑定成功"
+                android:textColor="@color/c5"
+                android:textSize="34px"
+                android:lineSpacingExtra="20px"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

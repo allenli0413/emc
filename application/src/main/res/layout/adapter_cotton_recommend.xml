@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:background="@color/white"
+    android:id="@+id/ll_adapter_cotton_recommend_item">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingTop="20px"
+        android:paddingLeft="20px">
+        
+        <TextView
+            android:id="@+id/tv_adapter_cotton_recommend_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/c2"/>
+
+        <TextView
+            android:id="@+id/tv_adapter_cotton_recommend_order_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/c4"
+            android:textSize="30px"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_adapter_cotton_recommend_order_price_front"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="30px"
+                android:textColor="@color/gray_text"/>
+
+            <TextView
+                android:id="@+id/tv_adapter_cotton_recommend_order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/yellow_text"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="30px"/>
+
+            <TextView
+                android:id="@+id/tv_adapter_cotton_recommend_order_price_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/gray_text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_adapter_cotton_recommend_online"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/online_business"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="13px"
+        android:paddingLeft="20px"
+        android:paddingBottom="20px">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_adapter_cotton_recommend_order_supplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:lineSpacingExtra="13px"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/gray_text"/>
+            <TextView
+                android:id="@+id/tv_adapter_cotton_recommend_order_repetory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:lineSpacingExtra="13px"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/gray_text"/>
+            <TextView
+            android:id="@+id/tv_adapter_cotton_recommend_order_publish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+            android:textSize="30px"
+            android:lineSpacingExtra="13px"
+            android:textColor="@color/gray_text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/tv_adapter_cotton_recommend_order_red_paper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:textColor="@color/yellow_text"
+                android:textSize="30px"
+                android:drawableLeft="@drawable/icon_red_paper_item"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:drawablePadding="5px"/>
+
+            <TextView
+                android:id="@+id/tv_adapter_cotton_recommend_order_repetory_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginTop="13px"
+                android:textColor="@color/green_text"
+                android:layout_marginRight="20px"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="@color/c1"/>
+
+</LinearLayout>

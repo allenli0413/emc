@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_agreement_child"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#f3f3f3"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llContainerQyriq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="合同签约日期"
+            android:textColor="#333333"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="2016-09-21"
+            android:textColor="#333333"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_arrow1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:src="@drawable/icon_tihuo_jtwc"/>
+
+
+    <LinearLayout
+        android:id="@+id/llContainerFkrq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="付款日期"
+            android:textColor="#cccccc"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/txt_pay_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="2016-09-21"
+            android:textColor="#cccccc"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_arrow2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:src="@drawable/icon_tihuo_jtwwc"/>
+
+    <LinearLayout
+        android:id="@+id/llContainerSfkjckd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否开具出库单"
+            android:textColor="#cccccc"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/txt_is_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="已开提货单"
+            android:textColor="#cccccc"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>

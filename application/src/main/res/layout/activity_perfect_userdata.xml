@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1">
+    <View style="@style/line_h"/>
+    <RelativeLayout
+        android:id="@+id/perfect_user_avater_layout"
+        android:layout_width="match_parent"
+        android:layout_height="135px"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="头像"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:textColor="@color/c2" />
+        <ImageView
+            android:id="@+id/iv_nicheng_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:src="@drawable/icon_goto" />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/perfect_user_avater"
+            android:layout_width="105px"
+            android:layout_height="105px"
+            fresco:placeholderImage="@drawable/default_avater"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="true"
+            android:clickable="true"
+            android:layout_marginRight="5px"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/iv_nicheng_goto"
+            android:layout_toStartOf="@+id/iv_nicheng_goto" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+    <RelativeLayout
+        android:id="@+id/perfect_user_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="用户姓名"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:textColor="@color/c2" />
+
+        <ImageView
+            android:id="@+id/user_name_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="15px"
+            android:src="@drawable/icon_goto" />
+
+        <TextView
+            android:id="@+id/perfect_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/user_name_goto"
+            android:text="用户姓名"
+            android:textSize="30px"
+            android:textColor="@color/c5" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+
+    <TextView
+        android:id="@+id/perfect_submit"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:background="@drawable/background_login_btn_selector"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="提交"
+        android:textSize="35px"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>

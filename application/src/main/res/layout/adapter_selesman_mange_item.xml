@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_avater"
+            android:layout_width="65px"
+            android:layout_height="65px"
+            android:layout_marginLeft="20px"
+            android:layout_gravity="center_vertical"
+            fresco:placeholderImage="@drawable/default_avater"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65px"
+            android:orientation="vertical"
+            android:layout_marginLeft="20px"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11111"
+                android:textSize="25px"/>
+            <TextView
+                android:id="@+id/user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="211111111111111"
+                android:textColor="@color/c5"
+                android:textSize="25px"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="@dimen/normal_title_height">
+    <ImageView
+        android:id="@+id/left_image"
+        android:layout_gravity="center_vertical"
+        android:layout_width="@dimen/title_image_margin"
+        android:gravity="center_vertical"
+        android:scaleType="center"
+        android:layout_marginLeft="@dimen/padding"
+        android:src="@drawable/back_icon_selector"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/left_text"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/title_image_margin"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_height="match_parent" android:textSize="@dimen/title_text_side_size"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/title_text"
+        android:text="@string/app_name"
+        style="@style/Text1"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/right_text"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="20px"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        style="@style/Text2"
+        android:text="管理"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/right_image2"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical|right"
+        android:layout_width="@dimen/title_image_margin"
+        android:layout_marginRight="@dimen/title_image_margin"
+        android:src="@drawable/icon_share"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/right_image"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical|right"
+        android:layout_width="@dimen/title_image_margin"
+        android:src="@drawable/icon_share"
+        android:layout_marginRight="20px"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:layout_height="match_parent" />
+</FrameLayout>

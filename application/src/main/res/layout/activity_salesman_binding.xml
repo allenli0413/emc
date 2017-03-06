@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85px"
+        android:orientation="horizontal"
+        android:background="@color/green">
+
+        <TextView
+            android:id="@+id/salesman_search"
+            android:layout_width="0dp"
+            android:layout_height="54px"
+            android:layout_weight="1"
+            android:hint="请输入业务员手机号码搜索"
+            android:textSize="26px"
+            android:gravity="center_vertical"
+            android:textColorHint="#cecece"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20px"
+            android:paddingLeft="10px"
+            android:drawablePadding="13px"
+            android:drawableLeft="@drawable/icon_search"
+            android:background="@drawable/bg_edit_search"/>
+
+        <TextView
+            android:id="@+id/salesman_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:text="取消"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:orientation="horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/contacts_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/salesman_contacts_title"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:text="手机通讯录"
+            android:gravity="center_vertical"
+            android:paddingLeft="20px"/>
+        <cn.appsdream.nestrefresh.normalstyle.NestRefreshLayout
+            android:id="@+id/nestRefreshLayout_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/listView_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none"/>
+        </cn.appsdream.nestrefresh.normalstyle.NestRefreshLayout>
+        <cn.appsdream.nestrefresh.normalstyle.NestRefreshLayout
+            android:id="@+id/nestRefreshLayout_contacts2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+            <ListView
+                android:id="@+id/listView_contacts2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none"/>
+        </cn.appsdream.nestrefresh.normalstyle.NestRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

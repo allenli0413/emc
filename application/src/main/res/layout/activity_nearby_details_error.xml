@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1">
+    <EditText
+        android:id="@+id/nearby_error_content"
+        android:layout_width="match_parent"
+        android:layout_height="420px"
+        android:background="@color/white"
+        android:padding="20px"
+        android:hint="请输入企业信息纠错内容(平台会根据反馈内容给予红包奖励)"
+        android:gravity="left|top"
+        android:textColorHint="@color/c6"
+        android:textSize="29px"/>
+
+    <TextView
+        android:id="@+id/nearby_error_submit"
+        android:layout_width="500px"
+        android:layout_height="80px"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="35px"
+        android:gravity="center"
+        android:layout_marginTop="60px"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/background_login_btn_selector"
+        />
+</LinearLayout>

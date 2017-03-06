@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1">
+    <View style="@style/line_h"/>
+    <!--修改密码-->
+    <RelativeLayout
+        android:id="@+id/setting_update_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="修改密码"
+            android:textSize="30px"
+            android:textColor="@color/c2" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="25px"
+            android:background="@drawable/icon_goto" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+    <!--用户协议-->
+    <RelativeLayout
+        android:id="@+id/setting_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="用户协议"
+            android:textSize="30px"
+            android:textColor="@color/c2" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="25px"
+            android:background="@drawable/icon_goto" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+    <!--关于我们-->
+    <RelativeLayout
+        android:id="@+id/setting_correlation"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="关于我们"
+            android:textSize="30px"
+            android:textColor="@color/c2" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="25px"
+            android:background="@drawable/icon_goto" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+    <!--邀请码-->
+    <RelativeLayout
+        android:id="@+id/setting_invite"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="邀请码"
+            android:textSize="30px"
+            android:textColor="@color/c2" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="25px"
+            android:background="@drawable/icon_goto" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+    <!--版本更新-->
+    <RelativeLayout
+        android:id="@+id/setting_versions"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:text="版本更新"
+            android:textSize="30px"
+            android:textColor="@color/c2" />
+        <TextView
+            android:id="@+id/my_indent_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="有更新"
+            android:textSize="30px"
+            android:drawablePadding="10px"
+            android:drawableLeft="@drawable/page_indicator_focused"
+            android:layout_toLeftOf="@+id/icon_my_indent_goto"
+            android:textColor="@color/c5"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@id/icon_my_indent_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="25px"
+            android:background="@drawable/icon_goto" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+    <TextView
+        android:id="@+id/setting_exit"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="115px"
+        android:layout_marginLeft="125px"
+        android:layout_marginRight="125px"
+        android:background="@drawable/background_login_btn_selector"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="退出登录"
+        android:textSize="30px"
+        android:textColor="@color/white" />
+</LinearLayout>

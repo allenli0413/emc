@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <LinearLayout
+        android:id="@+id/ll_adapter_main_home_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20px"
+        android:paddingBottom="20px">
+
+        <ImageView
+            android:id="@+id/iv_adapter_main_home_control_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/quality_query"/>
+
+        <TextView
+            android:id="@+id/tv_adapter_main_home_control_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15px"
+            android:text="查质量"
+            android:textColor="@color/c2"
+            android:textSize="24px"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

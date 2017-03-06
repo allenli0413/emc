@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33000000"
+    android:gravity="right">
+
+    <ScrollView
+        android:id="@+id/sv_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/gray_line"
+        android:paddingRight="20px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="筛选"
+            android:textSize="28px"
+            android:background="@color/white"
+            android:padding="20px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="采摘方式及棉花类型"
+                android:textSize="28px"
+                android:textColor="@color/c4"
+                android:paddingTop="10px"
+                android:paddingLeft="20px"
+                android:paddingBottom="20px"/>
+
+            <com.emiancang.emiancang.view.ScrollViewGridview
+                android:id="@+id/gv_store_filter_cotton_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:layout_marginBottom="20px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="年份"
+                android:textSize="28px"
+                android:textColor="@color/c4"
+                android:padding="20px"/>
+
+            <com.emiancang.emiancang.view.ScrollViewGridview
+                android:id="@+id/gv_store_filter_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:layout_marginBottom="20px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10px"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主体颜色级"
+                android:padding="20px"
+                android:textColor="@color/c4"
+                android:textSize="28px"/>
+
+            <com.emiancang.emiancang.view.ScrollViewGridview
+                android:id="@+id/gv_store_filter_color_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:layout_marginBottom="20px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="10px">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="10px"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="回潮区间"
+                android:textColor="@color/c4"
+                android:textSize="28px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:layout_marginTop="15px"
+                android:layout_marginBottom="14px"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_reversion_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/tv_reversion_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.emiancang.emiancang.view.SeekBarPressure
+                android:id="@+id/seekbar_reversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="10px"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="含杂区间"
+                android:textColor="@color/c4"
+                android:textSize="28px"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:layout_marginTop="15px"
+                android:layout_marginBottom="14px"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_inclusion_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/tv_inclusion_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.emiancang.emiancang.view.SeekBarPressure
+                android:id="@+id/seekbar_inclusion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="10px"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="断裂比强度"
+                android:textColor="@color/c4"
+                android:textSize="28px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:layout_marginTop="15px"
+                android:layout_marginBottom="14px"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_break_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/tv_break_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.emiancang.emiancang.view.SeekBarPressure
+                android:id="@+id/seekbar_break"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="10px"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="长度整齐度(%)"
+                android:textColor="@color/c4"
+                android:textSize="28px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:layout_marginTop="15px"
+                android:layout_marginBottom="14px"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/tv_length_uniformity_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_length_uniformity_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+
+            </LinearLayout>
+
+            <com.emiancang.emiancang.view.SeekBarPressure
+                android:id="@+id/seekbar_length_uniformity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="10px"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="马克隆值"
+                android:textColor="@color/c4"
+                android:textSize="28px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20px"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/edit_store_filter_micronaire_value_min"
+                    android:layout_width="180px"
+                    android:layout_height="60px"
+                    android:hint="最小值"
+                    android:textSize="24px"
+                    android:textColorHint="@color/gray_text"
+                    android:paddingTop="18px"
+                    android:paddingBottom="18px"
+                    android:gravity="center"
+                    android:digits="@string/num_and_point_digits"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/background_btn_gray_round_rect"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2px"
+                    android:layout_weight="1"
+                    android:background="@color/gray_line"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"/>
+
+                <EditText
+                    android:id="@+id/edit_store_filter_micronaire_value_max"
+                    android:layout_width="180px"
+                    android:layout_height="60px"
+                    android:hint="最大值"
+                    android:textSize="24px"
+                    android:textColorHint="@color/gray_text"
+                    android:paddingTop="18px"
+                    android:paddingBottom="18px"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:digits="@string/num_and_point_digits"
+                    android:background="@drawable/background_btn_gray_round_rect"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_store_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="10px"
+            android:padding="20px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格范围(元/吨)"
+                android:textColor="@color/c4"
+                android:textSize="28px"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20px"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/edit_store_price_min"
+                    android:layout_width="180px"
+                    android:layout_height="60px"
+                    android:hint="最小值"
+                    android:textSize="24px"
+                    android:textColorHint="@color/gray_text"
+                    android:paddingTop="18px"
+                    android:paddingBottom="18px"
+                    android:inputType="numberDecimal"
+                    android:gravity="center"
+                    android:digits="@string/num_and_point_digits"
+                    android:background="@drawable/background_btn_gray_round_rect"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2px"
+                    android:layout_weight="1"
+                    android:background="@color/gray_line"
+                    android:layout_marginLeft="20px"
+                    android:layout_marginRight="20px"/>
+
+                <EditText
+                    android:id="@+id/edit_store_price_max"
+                    android:layout_width="180px"
+                    android:layout_height="60px"
+                    android:gravity="center"
+                    android:hint="最大值"
+                    android:textSize="24px"
+                    android:textColorHint="@color/gray_text"
+                    android:inputType="numberDecimal"
+                    android:paddingTop="18px"
+                    android:paddingBottom="18px"
+                    android:digits="@string/num_and_point_digits"
+                    android:background="@drawable/background_btn_gray_round_rect"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_store_filter_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="重置"
+                android:textSize="34px"
+                android:gravity="center"
+                android:paddingTop="20px"
+                android:paddingBottom="20px"
+                android:background="@drawable/background_btn_business_help_selector"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/gray_line"/>
+
+            <TextView
+                android:id="@+id/tv_store_filter_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="确定"
+                android:textSize="34px"
+                android:gravity="center"
+                android:paddingTop="20px"
+                android:paddingBottom="20px"
+                android:background="@drawable/background_submit_btn_selector"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

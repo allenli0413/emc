@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1">
+    <View style="@style/line_h"/>
+    <RelativeLayout
+        android:id="@+id/enterprise_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_enterprise_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="企业名称"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:textColor="@color/c2" />
+        <ImageView
+            android:id="@+id/enterprise_name_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/icon_goto" />
+        <TextView
+            android:id="@+id/enterprise_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toRightOf="@+id/tv_enterprise_name_title"
+            android:layout_marginLeft="20px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:textSize="30px"
+            android:text="必填"
+            android:layout_toLeftOf="@+id/enterprise_name_goto"
+            android:textColor="@color/c5" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+    <RelativeLayout
+        android:id="@+id/enterprise_type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_enterprise_type_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="企业类型"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:textColor="@color/c2" />
+        <ImageView
+            android:id="@+id/enterprise_type_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/icon_goto" />
+        <TextView
+            android:id="@+id/enterprise_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toRightOf="@+id/tv_enterprise_type_title"
+            android:layout_marginLeft="20px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:layout_toLeftOf="@+id/enterprise_type_goto"
+            android:textSize="30px"
+            android:text="必选"
+            android:textColor="@color/c5" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+    <RelativeLayout
+        android:id="@+id/enterprise_location_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_enterprise_location_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="企业所在地"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:textColor="@color/c2" />
+        <ImageView
+            android:id="@+id/enterprise_location_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/icon_goto" />
+        <TextView
+            android:id="@+id/enterprise_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toRightOf="@+id/tv_enterprise_location_title"
+            android:layout_marginLeft="20px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:layout_toLeftOf="@+id/enterprise_location_goto"
+            android:textSize="30px"
+            android:text="必选"
+            android:textColor="@color/c5" />
+    </RelativeLayout>
+    <View style="@style/line_h"/>
+
+    <RelativeLayout
+        android:id="@+id/enterprise_site_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_enterprise_site_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="企业地址"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:textColor="@color/c2" />
+        <ImageView
+            android:id="@+id/enterprise_site_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/icon_goto" />
+
+        <TextView
+            android:id="@+id/enterprise_site"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toRightOf="@+id/tv_enterprise_site_title"
+            android:layout_marginLeft="20px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:layout_toLeftOf="@+id/enterprise_site_goto"
+            android:textSize="30px"
+            android:text="必填"
+            android:textColor="@color/c5" />
+    </RelativeLayout>
+
+    <View style="@style/line_h"/>
+
+    <RelativeLayout
+        android:id="@+id/enterprise_connect_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_enterprise_connect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="企业联系方式"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:textColor="@color/c2" />
+        <ImageView
+            android:id="@+id/enterprise_connect_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/icon_goto" />
+
+        <TextView
+            android:id="@+id/enterprise_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10px"
+            android:layout_toRightOf="@+id/tv_enterprise_connect_title"
+            android:layout_marginLeft="20px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:layout_toLeftOf="@+id/enterprise_connect_goto"
+            android:textSize="30px"
+            android:text="必填"
+            android:textColor="@color/c5" />
+    </RelativeLayout>
+
+    <View style="@style/line_h"/>
+
+    <RelativeLayout
+        android:id="@+id/warehouse_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_enterprise_code_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="仓库名称"
+            android:layout_marginLeft="20px"
+            android:textSize="35px"
+            android:textColor="@color/c2" />
+
+        <ImageView
+            android:id="@+id/warehouse_code_goto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="20px"
+            android:src="@drawable/icon_goto" />
+        <TextView
+            android:id="@+id/warehouse_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_enterprise_code_title"
+            android:layout_marginLeft="20px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:layout_toLeftOf="@+id/warehouse_code_goto"
+            android:textSize="30px"
+            android:text="可选"
+            android:layout_marginRight="10px"
+            android:textColor="@color/c5" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/enterprise_next"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:layout_marginTop="60px"
+        android:layout_marginLeft="125px"
+        android:layout_marginRight="125px"
+        android:background="@drawable/background_login_btn_selector"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="下一步"
+        android:textSize="30px"
+        android:textColor="@color/white" />
+</LinearLayout>

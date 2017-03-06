@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_business_help_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20px"
+        android:layout_marginBottom="20px"
+        android:text="fweafewafewf"
+        android:textColor="@color/c2"
+        android:textSize="30px"
+        android:background="@color/white"/>
+
+        <ListView
+            android:id="@+id/lv_business_help_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+
+</LinearLayout>

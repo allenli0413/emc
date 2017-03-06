@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/background_btn_business_help_select" android:state_selected="true" />
+    <item android:drawable="@drawable/background_btn_business_help_select" android:state_focused="true" />
+    <item android:drawable="@drawable/background_btn_business_help_select" android:state_pressed="true" />
+    <item android:drawable="@color/white" />
+</selector>

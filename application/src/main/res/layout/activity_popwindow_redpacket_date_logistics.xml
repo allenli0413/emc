@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View style="@style/line_h"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/red">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/c1">
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="90px"
+                android:background="@color/c1"
+                android:textColor="@color/green"
+                android:textSize="35px"
+                android:text="取消"
+                android:padding="20px"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="90px"
+                android:layout_weight="1"
+                android:text="选择日期"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/notarize"
+                android:layout_width="wrap_content"
+                android:layout_height="90px"
+                android:background="@color/c1"
+                android:textColor="@color/green"
+                android:textSize="35px"
+                android:text="确认"
+                android:padding="20px"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起始"
+                android:textSize="30px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="35px"
+                android:background="@color/white"/>
+            <DatePicker
+                android:id="@+id/dp_date_start"
+                android:layout_width="510px"
+                android:layout_height="240px"
+                android:calendarViewShown="false"
+                android:layout_marginLeft="70px"
+                />
+        </LinearLayout>
+        <View style="@style/line_h"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="终止"
+                android:textSize="30px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="35px"/>
+            <DatePicker
+                android:id="@+id/dp_date_end"
+                android:layout_width="510px"
+                android:layout_height="240px"
+                android:calendarViewShown="false"
+                android:layout_marginLeft="70px"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,214 @@
+body,header,section,div,p,ul,li,span{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+header{
+    height: 15%;
+}
+section{
+    font-size: 1.2rem;
+    color: #333333;
+}
+body{
+    background: #f9f9f9;
+}
+.tab_nav{
+    width: 100%;
+    height: 3.6rem;
+}
+.tab_nav li{
+    background: #ffffff;
+    width: 33.33333%;
+    text-align: center;
+    line-height: 3.6rem;
+    color: #666666;
+    font-size: 1.6rem;
+    float: left;
+}
+.tab_nav li.active{
+    color: #000000;
+    border-bottom: 0.1rem solid #13ad67;
+}
+section div.active{
+    display: block;
+}
+/*��������ʽ*/
+.data_charts{
+    background: #ffffff;
+}
+.gap{
+    width: 100%;
+    height: 0.5rem;
+    margin:0!important;
+    padding:0!important;
+    background: #f9f9f9;
+}
+.group_charts{
+    background: #ffffff;
+}
+.group_charts .groupInfo{
+    padding: 0 1rem;
+    /*width: 100%;*/
+}
+.group_charts .groupInfo p{
+    color: #000000;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    border-bottom: 1px solid #efefef;
+}
+.group_charts .groupInfo ul li{
+    display: inline-block;
+    line-height: 1.8rem;
+    width: 100%;
+    color: #666666;
+    margin-bottom: 0;
+}
+.cotton_info{
+    margin: 0 1rem!important;
+    font-size: 1.4rem;
+    color: #000000;
+    line-height: 2.2rem;
+    border-bottom:0.1rem solid #efefef;
+}
+.group_charts table,.group_charts table td,.group_charts table tr{
+    border: 0.1rem solid #efefef;
+    border-collapse: collapse
+}
+.group_charts table{
+    margin:  1rem!important;
+    text-align:center;
+    padding:0px;
+}
+.group_charts table td{
+    width:10%;
+}
+.group_charts table tr{
+    height:2rem;
+}
+
+/*����ͼ����ʽ*/
+.chart_content,.table_content{
+    padding:0 1rem;
+}
+#mainColor,#length,#micron_val,#Mazhi,#ginning_quality{
+    width: 100%;
+    height:20rem;
+}
+#strong_accumu{
+    width: 30rem;
+    height:20rem;
+}
+.chart_content .chart_head,.table_content .chart_head{
+    padding-top: 0.5rem;
+    height: 1.9rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color:#333333;
+    border-bottom: 0.1rem solid #efefef;
+}
+.chart_content .chart_head .fr,.table_content .chart_head .fr{
+    color:#999;
+}
+.table_content table,.table_content td,.table_content tr{
+    border: none;
+    border-collapse: collapse;
+}
+.table_content tr{
+    height: 3rem;
+}
+.table_content td{
+    width: 10rem;
+    text-align:center;
+}
+.table_content div{
+    line-height:4rem;
+    height:4rem;
+    width:100%;
+}
+
+/*��ҵ��Ϣ��ʽ*/
+.enterprise_info{
+    width: 100%;
+    height:100%;
+    background: #ffffff;
+}
+.enterprise_info ul{
+    margin: 0 1rem;
+}
+.enterprise_info ul li{
+    font-size: 1.4rem;
+    color: #333333;
+    width: 100%;
+    height:2.4rem;
+    line-height:2.4rem;
+
+}
+.enterprise_info ul li span{
+    display: inline-block;
+    text-align: left;
+    word-wrap: normal;
+}
+.enterprise_info ul li>span:nth-child(0){
+    width: 60%;
+}
+.enterprise_info ul li>span:nth-child(1){
+    width: 25%;
+}
+.map_content{
+    margin-left: 0.3rem;
+    margin-top: -0.3rem;
+    display: inline-block;
+    width:0.8rem;
+    height:1rem;
+    background-image: url("map.png");
+    background-size: cover;
+}
+.special_phone{
+    margin-left: 13rem;
+    margin-top: -0.3rem;
+    display: inline-block;
+    width:1.6rem;
+    height:1.2rem;
+    background-image: url("zuoji.png");
+    background-size: cover;
+
+}
+.tel_phone{
+    margin-left: 13.3rem;
+    margin-top: -0.3rem;
+    display: inline-block;
+    width:1rem;
+    height:1.5rem;
+    background-image: url("phone.png");
+    background-size: cover;
+
+}
+.aboutUs .content{
+    text-indent:2rem;
+    font-size: 1.2rem;
+    width:90%;
+    position: absolute;
+    top:6rem;
+    left:50%;
+    margin-left: -45%;
+    line-height: 1.8rem;
+}
+.aboutUs .title{
+    font-weight: bold;
+    font-size: 1.6rem;
+    width:20%;
+    height:3rem;
+    line-height: 3rem;
+    position: absolute;
+    top:2rem;
+    left: 50%;
+    margin-left: -10%;
+    text-align: center;
+}

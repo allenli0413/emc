@@ -1,0 +1,30 @@
+//include ':slidingmenu'
+//include ':myapplication'
+include ':library', ':application', ':mayigeek', ':nestrefreshlayout'
+
+include ':modules:AsyncHttp'
+include ':modules:logger'
+include ':modules:liteOrm'
+include ':modules:wheel'
+include ':modules:autolayout'
+include ':modules:devsmartlib'
+include ':modules:FrescoLib'
+include ':modules:convenientbanner'
+include ':modules:EventBus'
+include ':modules:RecyclerViewPager-master'
+include ':modules:ImageViewTouch'
+include ':modules:JPush'
+
+project(':modules:AsyncHttp').projectDir = file("modules/android-async-http-master")
+project(':modules:logger').projectDir = file("modules/logger-master")
+project(':modules:liteOrm').projectDir = file("modules/android-lite-orm-master")
+project(':modules:wheel').projectDir = file("modules/wheel")
+project(':modules:autolayout').projectDir = file("modules/autolayout")
+project(':modules:devsmartlib').projectDir = file("modules/devsmartlib")
+project(':modules:FrescoLib').projectDir = file("modules/FrescoLib")
+project(':modules:convenientbanner').projectDir = file("modules/convenientbanner")
+project(':modules:EventBus').projectDir = file("modules/EventBus")
+project(':modules:RecyclerViewPager-master').projectDir = file("modules/RecyclerViewPager-master")
+project(':modules:ImageViewTouch').projectDir = file("modules/ImageViewTouch")
+project(':modules:JPush').projectDir = file("modules/JPush")
+

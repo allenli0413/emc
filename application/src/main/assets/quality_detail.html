@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="application/javascript" src="jquery.js"></script>
+    <script type="application/javascript" src="echarts.js"></script>
+</head>
+<body>
+<header>
+    <ul class="tab_nav">
+        <li class="active">组批表</li>
+        <li>数据图表</li>
+        <li>企业信息</li>
+    </ul>
+    <p class="gap"></p>
+</header>
+<section>
+    <div class="group_charts active div_nav" style="display: block">
+        <div class="groupInfo">
+            <p>批次信息</p>
+            <ul>
+                <li>
+                    <span class="fl">仓库自提价</span>
+                    <span class="fr">99999元/吨 公重</span>
+                </li>
+                <li>
+                    <span class="fl">检验机构</span>
+                    <span class="fr">山东省纤维检验局</span>
+                </li>
+                <li>
+                    <span class="fl">检验日期</span>
+                    <span class="fr">2015-10-29</span>
+                </li>
+                <li>
+                    <span class="fl">全部检验</span>
+                    <span class="fr">是</span>
+                </li>
+                <li>
+                    <span class="fl">公检仓库</span>
+                    <span class="fr">青岛中的和速度更快</span>
+                </li>
+                <li>
+                    <span class="fl">加工厂</span>
+                    <span class="fr">安徽的阿拉高科技</span>
+                </li>
+                <li>
+                    <span class="fl">存储仓库</span>
+                    <!--<span class="fr">中储就是打开了房价<i class="map_content" onclick="map()"></i></span>-->
+                    <span class="fr">中储就是打开了房价<i class="map_content" onclick="sayHello()"></i></span>
+                </li>
+            </ul>
+        </div>
+        <p class="gap"></p>
+        <p class="cotton_info">棉花信息</p>
+        <table>
+            <tbody>
+            <tr>
+                <td colspan="5">批号：</td>
+                <td colspan="5">质量标识：</td>
+            </tr>
+            <tr>
+                <td colspan="2">加工/检验包数</td>
+                <td colspan="3" class="hy_jysj_zbs"></td>
+                <td colspan="2">平均回潮：</td>
+                <td colspan="3" class="hy_jysj_hcl"></td>
+            </tr>
+            <tr>
+                <td colspan="2">合计毛重：</td>
+                <td colspan="3" class="hy_jysj_mz"></td>
+                <td colspan="2">平均含杂：</td>
+                <td colspan="3" class="hy_jysj_hzl"></td>
+            </tr>
+            <tr>
+                <td colspan="2">合计皮重：</td>
+                <td colspan="3" class="hy_jysj_pz"></td>
+                <td colspan="2">合计公重：</td>
+                <td colspan="3" class="hy_jysj_gdzl"></td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">合计净重：</td>
+                <td colspan="3" rowspan="2" class="hy_jysj_jz"></td>
+                <td colspan="2" rowspan="2">批检验指标</td>
+                <td colspan="3" rowspan="2">棉包组批各指标分布</td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">批检验指标</td>
+                <td colspan="3" rowspan="2">棉包组批各指标分布</td>
+                <td colspan="2" rowspan="2">主体长度级</td>
+                <td colspan="3" rowspan="2"></td>
+            </tr>
+            <tr>
+            </tr>
+            <!--console.log(mainColor_data);-->
+            <!--console.log(length_data);-->
+            <!--console.log(micron_val);-->
+            <!--console.log(ginning_quality_data);-->
+            <!--console.log(duanlieqiangdu);-->
+            <!--console.log(duanlieqiangdu);-->
+
+            <tr>
+                <td colspan="2">主体颜色级</td>
+                <td colspan="3" class="hy_jysj_ysj"></td>
+                <td colspan="2">长度平均值：</td>
+                <td colspan="3" class="hy_jysj_cdz"></td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="13" style="vertical-align:middle;">各颜色比例（%）</td>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2" rowspan="8" style="vertical-align:middle;">各长度值比例（%）</td>
+                <td colspan="2" class="length_name"></td>
+                <td class="length_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2" class="length_name"></td>
+                <td class="length_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2" class="length_name"></td>
+                <td class="length_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2" class="length_name"></td>
+                <td class="length_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2" class="length_name"></td>
+                <td class="length_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2" class="length_name"></td>
+                <td class="length_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2" class="length_name">/td>
+                <td class="length_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2" class="length_name"></td>
+                <td class="length_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2">马克隆主体级</td>
+                <td colspan="3" class="hy_jysj_mkldc"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2">马值平均值</td>
+                <td colspan="3">4.3</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2" rowspan="5">各马值级比例（%）</td>
+                <td colspan="2" class="micron_name"></td>
+                <td class="micron_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2" class="micron_name"></td>
+                <td class="micron_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="mainColor_name"></td>
+                <td class="mainColor_val"></td>
+                <td colspan="2" class="micron_name"></td>
+                <td class="micron_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="3">长度整齐度<br>（%）</td>
+                <td colspan="2" class="changzhengqi_name"></td>
+                <td class="changzhengqi_val"></td>
+                <td colspan="2" class="micron_name"></td>
+                <td class="micron_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="changzhengqi_name"></td>
+                <td class="changzhengqi_val"></td>
+                <td colspan="2" class="micron_name"></td>
+                <td class="micron_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="changzhengqi_name">平均值</td>
+                <td class="changzhengqi_val">83.19</td>
+                <td colspan="2" rowspan="3">强力（cN/tex）</td>
+                <td colspan="2" class="duanlieqiangdu_name"></td>
+                <td class="duanlieqiangdu_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2">+b</td>
+                <td colspan="2">平均值</td>
+                <td class="hy_jysj_hd"></td>
+                <td colspan="2" class="duanlieqiangdu_name"></td>
+                <td class="duanlieqiangdu_val"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Rd（%）</td>
+                <td colspan="2">平均值</td>
+                <td class="hy_jysj_fsl"></td>
+                <td colspan="2" class="duanlieqiangdu_name"></td>
+                <td class="duanlieqiangdu_val"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" rowspan="5">备注</td>
+                <td colspan="8" rowspan="5" style="text-align:left;">1、以上数据由中纤局公开数据汇总得出。<br>
+                    2、主体颜色级80%以上，长度级为试样长度的算术平均值对应的长度级，主体马克隆级为百分比最大的马克隆值级。<br> 3、更多棉花资源请访问e棉仓
+                    www.emiancang.com。<br>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            </tbody></table>
+    </div>
+    <div class="data_charts div_nav" style="display: none">
+        <div class="chart_color chart_content">
+            <p class="chart_head">
+                <span class="fl">主体颜色级</span>
+                <span class="fr hy_jysj_ysj"></span>
+            </p>
+            <div id="mainColor"></div>
+        </div>
+        <p class="gap"></p>
+        <div class="chart_length chart_content">
+            <p class="chart_head">
+                <span class="fl">长度平均值</span>
+                <span class="fr hy_jysj_cdz"></span>
+            </p>
+            <div id="length"></div>
+        </div>
+        <p class="gap"></p>
+        <div class="chart_micron chart_content">
+            <p class="chart_head">
+                <span class="fl">马克隆主体级</span>
+                <span class="fr hy_jysj_mkldc"></span>
+            </p>
+            <div id="micron_val"></div>
+        </div>
+        <p class="gap"></p>
+        <div class="chart_mazhi chart_content">
+            <p class="chart_head">
+                <span class="fl">马值统计图</span>
+                <span class="fr"></span>
+            </p>
+            <div id="Mazhi"></div>
+        </div>
+        <p class="gap"></p>
+        <div class="chart_ginning chart_content">
+            <p class="chart_head">
+                <span class="fl">轧工质量比例</span>
+                <span class="fr"></span>
+            </p>
+            <div id="ginning_quality"></div>
+        </div>
+        <p class="gap"></p>
+        <div class="strong_chart chart_content">
+            <p class="chart_head">
+                <span class="fl">强力累计图</span>
+                <span class="fr"></span>
+            </p>
+            <div id="strong_accumu"></div>
+        </div>
+        <p class="gap"></p>
+        <div class="table_content">
+            <p class="chart_head">
+                <span class="fl">长整齐度（%）</span>
+                <span class="fr"></span>
+            </p>
+            <table>
+                <tbody>
+                <tr class="changzhengqi">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>最小值</td>
+                    <td>最大值</td>
+                    <td>平均值</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="gap"></p>
+        <div class="table_content">
+            <p class="chart_head">
+                <span class="fl">断裂比强度（cN/tex）</span>
+                <span class="fr"></span>
+            </p>
+            <table>
+                <tbody>
+                <tr class="duanlieqiangdu">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>最小值</td>
+                    <td>最大值</td>
+                    <td>平均值</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="gap"></p>
+        <div class="table_content">
+            <p class="chart_head">
+                <span class="fl">+b(%)</span>
+                <span class="fr"></span>
+            </p>
+           <div>
+               <span class="fl">平均值</span><span class="fr hy_jysj_hd"></span>
+           </div>
+        </div>
+        <p class="gap"></p>
+        <div class="table_content">
+            <p class="chart_head">
+                <span class="fl">Rb(%)</span>
+                <span class="fr"></span>
+            </p>
+            <div>
+                <span class="fl">平均值</span><span class="fr hy_jysj_fsl"></span>
+            </div>
+        </div>
+
+    </div>
+    <div class="enterprise_info div_nav"  style="display: none">
+        <ul>
+            <li>
+                <span >企业名称</span>
+                <span >日照大口径有富商大贾收复失地限公司</span>
+            </li>
+            <li>
+                <span >联系人</span>
+                <span >米以内</span>
+            </li>
+            <li>
+                <span >手机号码</span>
+                <span >15231263212</span>
+                <i class="tel_phone" onclick="tel_phone()"></i>
+
+            </li>
+            <li>
+                <span >固定电话</span>
+                <span >010-1452125</span>
+                <i class="special_phone" onclick="special_phone()"></i>
+            </li>
+            <li>
+                <span >传真号码</span>
+                <span >010-1452125</span>
+            </li>
+            <li>
+                <span >联系地址</span>
+                <span >展示</span>
+            </li>
+        </ul>
+    </div>
+</section>
+<script>
+    function rems(){
+            var html = document.documentElement;
+            var wid = html.clientWidth;
+            var fz = wid / 375 * 10 +'px';
+            html.style.fontSize = fz;
+        }
+    rems();
+    window.addEventListener('resize',rems,false);//页面监听
+    window.onload=function(){
+//        从初始数据中筛选出可以绑定到图标中的数据的方法
+        function getNewArr(oldArr,newArr,color){
+            for(var key in oldArr){
+                if(oldArr[key][1]!==null){
+                    newArr.push({value:oldArr[key][1], name:oldArr[key][0]+" "+oldArr[key][1]+'%',
+                                itemStyle:{normal:{color:color[key]}}
+                            })
+                }
+            }
+        }
+
+        //组批图中数据绑定方法
+        function group_data(_data,_name,_val){
+            for(var key in _data){
+                _name.eq(key).html(_data[key][0]);
+                _data[key][1]?_val.eq(key).html(_data[key][1]):_val.eq(key).html("——")
+            } 
+        }
+        
+       
+        $.ajax({
+            url:"http://new.emiancang.com/work/app/getGjsj.mvc",
+            type:"GET",
+            data:{
+                token:"DsovoYchAjq8DZ6wtaAnZGsSrAj4Yr97",
+                id:"107529",
+                ph:66094141029
+            },
+            dataType:'json',
+                success: function (Data) {
+                    console.log(Data);
+                    //包含所有项的数组
+                    var mainColor_data=[];
+                    var length_data=[];
+                    var micron_val_data=[];
+                    var ginning_quality_data=[];
+                    var strong_accumu=[];
+                    var changzhengqi=[];
+                    var duanlieqiangdu=[];
+
+                    //每一组数据中各项目对应颜色
+                    var mainColor_color=['#1de0f6', '#00a0ea','#40bef8', '#81e3fc', '#08b3c4','#27d4e4',"#9fe2e8","#2ed3c5", "#3ce7c0",'#26e7d7',"#0ed8c7","#1aa1d9"];
+                    var length_color=['#ae8f10', '#d4ad10','#c65602', '#efa252', '#e26d0d','#fec192',"#f0d67a","#fbad19"];
+                    var micron_color=['#29a492', '#2fb2ae','#34c49d', '#28c492', '#35cba2'];
+                    var ginning_quality_color=['#71f969', '#f8ab5d','#4abdf3'];
+                   //只包含有数据项的数组
+                    var mainColor_data_N=[];
+                    var length_data_N=[];
+                    var micron_val_data_N=[];
+                    var ginning_quality_data_N=[];
+
+
+                    if(Data.resultCode=='200'){
+                        var info=Data.resultInfo;
+//                        将所有数据按同一类分成数组
+                        mainColor_data.push(["白棉1级",info.bm1j],["白棉2级",info.bm2j],["白棉3级",info.bm3j],["白棉4级",info.bm4j],["白棉5级",info.bm5j],["淡点污棉1级",info.ddwm1j],["淡点污棉2级",info.ddwm2j],["淡点污棉3级",info.ddwm3j],["淡黄染棉1级",info.dhrm1j],["淡黄染棉2级",info.dhrm2j],["淡黄染棉3级",info.dhrm3j],["黄染棉1级",info.hrm1j],["黄染棉2级",info.hrm2j]);
+                        length_data.push(["25mm",info.cdj25],["26mm",info.cdj26],["27mm",info.cdj27],["28mm",info.cdj28],["29mm",info.cdj29],["30mm",info.cdj30],["31mm",info.cdj31],["32mm",info.cdj32]);
+                        micron_val_data.push(["C1",info.mklzc1],["C2",info.mklzc2],["B1",info.mklzb1],["B2",info.mklzb2],["A",info.mklza]);
+                        ginning_quality_data.push(["P1",info.zgzl_p1],["P2",info.zgzl_p2],["P3",info.zgzl_p3]);
+                        changzhengqi.push(["最小值",info.cdzqd_min],["最大值",info.cdzqd_max],["平均值",info.hy_jysj_dlbqdzs]);
+                        duanlieqiangdu.push(["最小值",info.dlbqd_min],["最大值",info.dlbqd_max],["平均值",info.hy_jysj_dlbqd]);
+
+                        console.log(mainColor_data);
+                        console.log(length_data);
+                        console.log(micron_val_data);
+                        console.log(ginning_quality_data);
+                        console.log(changzhengqi);
+                        console.log(duanlieqiangdu);
+//                      处理马值数据
+                        var Mazhi_data=info.mklzsdt;
+                        var Mazhi_data_N=[];
+                        for(var key in Mazhi_data){
+                            Mazhi_data_N.push([key,Mazhi_data[key]]);
+                        }
+                        var max_length=Mazhi_data_N.length;
+
+//                        处理强力累计图数据
+                        var strong_accumu_data=info.dlbqdsdt;
+                        var strong_accumu_data_N=[];
+                        var s1Num= 0,s2Num= 0,s3Num= 0,s4Num= 0,s5Num= 0;
+                        for (var key in strong_accumu_data){
+                           if(strong_accumu_data[key]>=31.0){
+                                s1Num++;
+                           }else if(29.0<=strong_accumu_data[key]<=30.9){
+                                s2Num++;
+                            }else if(26.0<=strong_accumu_data[key]<=28.9){
+                                s3Num++;
+                            }else if(24.0<=strong_accumu_data[key]<=25.9){
+                                s4Num++;
+                            }else if(strong_accumu_data[key]<24){
+                                s5Num++;
+                            }
+                        }
+
+                        strong_accumu_data_N.push(s1Num/strong_accumu_data.length*100,s2Num/strong_accumu_data.length*100,s3Num/strong_accumu_data.length*100,s4Num/strong_accumu_data.length*100,s5Num/strong_accumu_data.length*100);
+
+
+//                        执行方法获取到需要绑定到饼状图图表中的数据的数组
+                        getNewArr(mainColor_data,mainColor_data_N,mainColor_color);
+                        getNewArr(length_data,length_data_N,length_color);
+                        getNewArr(micron_val_data,micron_val_data_N,micron_color);
+                        getNewArr(ginning_quality_data,ginning_quality_data_N,ginning_quality_color);
+
+                        // 主题颜色
+                        var mainColor = echarts.init(document.getElementById('mainColor'));
+
+                        option_mainColor = {
+                            tooltip : {
+                                show:false,
+                                trigger: 'item',
+                                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                            },
+                            legend:{
+                                type: 'legendUnSelect',
+                                // 图例名称
+                                name: mainColor_data_N},
+                            series : [
+                                {
+                                    name: '访问来源',
+                                    type: 'pie',
+                                    radius : '55%',
+                                    center: ['44%', '50%'],
+                                    data:mainColor_data_N,
+
+                                    itemStyle: {
+                                        emphasis: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'red'
+                                        }
+                                    }
+                                }
+                            ]
+                        };
+                        mainColor.setOption(option_mainColor);
+                        window.onresize=mainColor.resize;
+                        //长度值
+                        var length = echarts.init(document.getElementById('length'));
+                        option_length = {
+                            tooltip : {
+                                trigger: 'item',
+                                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                            },
+                            series : [
+                                {
+                                    name: '访问来源',
+                                    type: 'pie',
+                                    radius : '55%',
+                                    center: ['50%', '50%'],
+                                    data:length_data_N,
+//                                        {value:1548, name:'29mm 31%'}
+
+                                    itemStyle: {
+                                        emphasis: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                        }
+                                    }
+                                }
+                            ],
+
+                        };
+                        length.setOption(option_length);
+
+                        //马克隆
+                        var micron_val = echarts.init(document.getElementById('micron_val'));
+                        option_micron_val = {
+                            tooltip : {
+                                trigger: 'item',
+                                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                            },
+                            series : [
+                                {
+                                    name: '访问来源',
+                                    type: 'pie',
+                                    radius : '55%',
+                                    center: ['50%', '50%'],
+                                    data:micron_val_data_N,
+//                                        {value:335, name:'C1 5.3%'},
+                                    itemStyle: {
+                                        emphasis: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                        }
+                                    }
+                                }
+                            ]
+                        };
+                        micron_val.setOption(option_micron_val);
+                        //马值统计图
+                        var Mazhi = echarts.init(document.getElementById('Mazhi'));
+                        var data = Mazhi_data_N;
+
+                        option_Mazhi = {
+                            xAxis: {
+                                gridIndex: 0,
+                                min: 1,
+                                max: max_length,
+                                splitLine: {
+                                    show: false
+                                }
+                            },
+                            yAxis: {
+                                gridIndex: 0,
+                                min:2,
+                                max: 7,
+                                splitLine: {
+                                    show: true
+                                }
+                            },
+                            series:  {
+                                name: 'I',
+                                type: 'scatter',
+                                xAxisIndex: 0,
+                                yAxisIndex: 0,
+                                symbolSize: 5,
+                                data: data
+                            }
+                        };
+                        Mazhi.setOption(option_Mazhi);
+                        //轧工质量比例
+                        var ginning_quality = echarts.init(document.getElementById('ginning_quality'));
+                        option_ginning_quality = {
+                            tooltip : {
+                                trigger: 'item',
+                                formatter: "{a} <br/>{b} : {c} ({d}%)"
+                            },
+                            series : [
+                                {
+                                    name: '访问来源',
+                                    type: 'pie',
+                                    radius : '55%',
+                                    center: ['50%', '50%'],//表体在content中位置
+                                    data:ginning_quality_data_N,
+//                                        {value:154, name:'P3 61%'}
+                                    itemStyle: {
+                                        emphasis: {
+                                            shadowBlur: 10,
+                                            shadowOffsetX: 0,
+                                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                        }
+                                    }
+                                }
+                            ]
+                        };
+                        ginning_quality.setOption(option_ginning_quality);
+
+                        //强力累计图
+                        var strong_accumu = echarts.init(document.getElementById('strong_accumu'));
+                        option_strong_accumu = {
+                            tooltip : {
+                                show:'false',
+                            },
+                            grid: {
+                                left: '3%',
+                                right: '4%',
+                                bottom: '3%',
+                                containLabel: true
+                            },
+                            xAxis : [
+                                {
+                                    type : 'category',
+                                    data : ['S1','S2','S3','S4'],
+                                    splitLine:{
+                                        show:true
+                                    },
+                                    axisTick: {
+                                        alignWithLabel: true
+                                    }
+                                }
+                            ],
+                            yAxis : [
+                                {
+                                    type : 'value',
+                                    data : ['0','25','50','75','100'],
+                                    splitLine:{
+                                        show:true
+                                    },
+                                    splitArea:{
+                                        show:false
+                                    },
+                                    axisTick: {
+                                        alignWithLabel: true
+                                    },
+                                    splitNumber:4,
+                                    max:100,
+                                    min:0,
+                                    interval:25,
+                                }
+                            ],
+                            series : [
+                                {
+                                    name:'强力累计图',
+                                    type:'bar',
+                                    barWidth:"40%",
+                                    label:{
+                                        normal:{
+                                            show:false,
+                                            position:'top'
+                                        }
+                                    },
+                                    itemStyle:{
+                                        normal:{
+                                            color:"#4abdf3"
+                                        }
+                                    },
+                                    data:strong_accumu_data_N,
+                                }
+                            ]
+                        };
+                        strong_accumu.setOption(option_strong_accumu);
+
+//                        长整齐度
+                        for(var key in changzhengqi){
+                            if(!changzhengqi[key][1]){
+                                $(".changzhengqi td").eq(key).html("--");
+                            }else{$(".changzhengqi td").eq(key).html(changzhengqi[key][1]);}
+                        }
+
+//                        断裂比强度
+                        for(var key in duanlieqiangdu){
+                            if(!duanlieqiangdu[key][1]){
+                                $(".duanlieqiangdu td").eq(key).html("--");
+                            }else{$(".duanlieqiangdu td").eq(key).html(duanlieqiangdu[key][1]);}
+                        }
+
+//                     b 灰度
+                        $(".hy_jysj_hd").html(info.hy_jysj_hd);
+//                     Rd（%）
+                        $(".hy_jysj_fsl").html(info.hy_jysj_fsl);
+//                        组批表数据绑定
+                        info.hy_jysj_hcl?$(".hy_jysj_hcl").html(info.hy_jysj_hcl+"%"):$(".hy_jysj_hcl").html("--");
+                        info.hy_jysj_hzl?$(".hy_jysj_hzl").html(info.hy_jysj_hzl+"%"):$(".hy_jysj_hzl").html("--");
+                        info.hy_jysj_mz?$(".hy_jysj_mz").html(info.hy_jysj_mz+"kg"):$(".hy_jysj_mz").html("--");
+                        info.hy_jysj_gdzl?$(".hy_jysj_gdzl").html(info.hy_jysj_gdzl+"kg"):$(".hy_jysj_gdzl").html("--");
+                        info.hy_jysj_zbs?$(".hy_jysj_zbs").html(info.hy_jysj_zbs+"/"+info.hy_jysj_zbs):$(".hy_jysj_zbs").html("--");
+                        info.hy_jysj_pz?$(".hy_jysj_pz").html(info.hy_jysj_pz+"kg"):$(".hy_jysj_pz").html("--");
+                        info.hy_jysj_jz?$(".hy_jysj_jz").html(info.hy_jysj_jz+"kg"):$(".hy_jysj_jz").html("--");
+
+                        info.hy_jysj_ysj?$(".hy_jysj_ysj").html(info.hy_jysj_ysj):$(".hy_jysj_ysj").html("--");
+                        info.hy_jysj_cdz?$(".hy_jysj_cdz").html(info.hy_jysj_cdz+"mm"):$(".hy_jysj_cdz").html("--");
+                        info.hy_jysj_mkldc ?$(".hy_jysj_mkldc").html(info.hy_jysj_mkldc):$(".hy_jysj_mkldc ").html("--");
+//                        console.log(mainColor_data);
+//                        console.log(length_data);
+//                        console.log(micron_val_data);
+//                        console.log(ginning_quality_data);
+//                        console.log(duanlieqiangdu);
+
+//                    mainColor:主体颜色级
+                        var $mainColor_name=$(".mainColor_name");
+                        var $mainColor_val=$(".mainColor_val");
+                        group_data(mainColor_data,$mainColor_name,$mainColor_val);
+//                        length:长度平均值
+                        var $length_name=$(".length_name");
+                        var $length_val=$(".length_val");
+                        group_data(length_data,$length_name,$length_val);
+//                        micron:马克隆 马值
+                        var $micron_name=$(".micron_name");
+                        var $micron_val=$(".micron_val");
+                        console.log(micron_val_data);
+                        group_data(micron_val_data,$micron_name,$micron_val);
+//                        长整齐度
+                        var $changzhengqi_name=$(".changzhengqi_name");
+                        var $changzhengqi_val=$(".changzhengqi_val");
+                        console.log(changzhengqi);
+                        group_data(changzhengqi,$changzhengqi_name,$changzhengqi_val);
+
+//                        断裂比强度
+                        var $duanlieqiangdu_name=$(".duanlieqiangdu_name");
+                        var $duanlieqiangdu_val=$(".duanlieqiangdu_val");
+                        console.log(duanlieqiangdu);
+                        group_data(duanlieqiangdu,$duanlieqiangdu_name,$duanlieqiangdu_val);
+
+
+                    }
+            }
+        });
+    };
+
+//top nav 点击事件
+    $(".tab_nav li").click(function(){
+        $(".tab_nav li").removeClass("active");
+        $(this).addClass("active");
+        $("div.div_nav").css("display","none");
+        $("div.div_nav").eq($(this).index()).css("display","block")
+
+    });
+//地图点击事件
+    function map(){
+    <!--window.android.map();-->
+        alert("地图");
+    };
+//座机点击事件
+    function special_phone(){
+        window.android.specialPhone("15010021350");
+    };
+//手机点击事件
+    function tel_phone(){
+        window.android.telPhone("15010021350");
+    };
+
+    function sayHello(){
+      var str = window.android.sayHello();
+      alert(str);
+   };
+
+
+</script>
+</body>
+</html>

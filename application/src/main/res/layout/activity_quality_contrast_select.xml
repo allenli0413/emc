@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_line">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择两批棉花进行对比  已选择"
+            android:textSize="30px"/>
+
+        <TextView
+            android:id="@+id/tv_quality_constrast_select_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="30px"
+            android:textColor="@color/yellow_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/2"
+            android:textSize="30px"
+            android:textColor="@color/yellow_text"/>
+
+    </LinearLayout>
+
+    <cn.appsdream.nestrefresh.normalstyle.NestRefreshLayout
+        android:id="@+id/nestRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1px"
+        android:background="@color/white">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>
+    </cn.appsdream.nestrefresh.normalstyle.NestRefreshLayout>
+
+</LinearLayout>

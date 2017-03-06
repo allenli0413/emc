@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105px"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/avater"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            fresco:placeholderImage="@drawable/default_avater"
+            fresco:placeholderImageScaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            fresco:roundAsCircle="true"
+            android:layout_marginLeft="20px"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="业务客服一"
+            android:textSize="31px"
+            android:layout_marginLeft="20px"/>
+    </LinearLayout>
+</LinearLayout>

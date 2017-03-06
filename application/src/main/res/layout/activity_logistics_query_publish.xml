@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/gray_line">
+
+    <View
+        android:id="@+id/view_logistics_query_publish_top"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <LinearLayout
+        android:id="@+id/edit_logistics_query_publish_start_place_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起运地"
+            android:textSize="30px"
+            android:textColor="@color/c2"/>
+
+        <TextView
+            android:id="@+id/edit_logistics_query_publish_start_place"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:background="@null"
+            android:hint="默认为当前定位地址"
+            android:textColor="@color/c6"
+            android:textColorHint="@color/c6"
+            android:textSize="30px"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray_line"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"/>
+
+    <LinearLayout
+        android:id="@+id/edit_logistics_query_publish_end_place_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到达地"
+            android:textSize="30px"
+            android:textColor="@color/c2"/>
+
+        <TextView
+            android:id="@+id/edit_logistics_query_publish_end_place"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:background="@null"
+            android:hint="请输入运输到达地点"
+            android:textColor="@color/c6"
+            android:textColorHint="@color/c6"
+            android:textSize="30px"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray_line"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起运日期"
+            android:textSize="30px"
+            android:textColor="@color/c2"/>
+
+        <TextView
+            android:id="@+id/tv_logistics_query_publish_start_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:background="@null"
+            android:hint="请选择起运日期"
+            android:textColor="@color/c6"
+            android:textSize="30px"
+            android:textColorHint="@color/c6"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray_line"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="到达日期"
+            android:textSize="30px"
+            android:textColor="@color/c2"/>
+
+        <TextView
+            android:id="@+id/tv_logistics_query_publish_end_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:background="@null"
+            android:hint="请选择到达日期"
+            android:textColor="@color/c6"
+            android:textSize="30px"
+            android:textColorHint="@color/c6"
+            android:gravity="right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray_line"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="20px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单价（元/吨）"
+            android:textSize="30px"
+            android:textColor="@color/c2"/>
+
+        <EditText
+            android:id="@+id/edit_logistics_query_publish_single_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="60px"
+            android:background="@null"
+            android:hint="请输入运输单价"
+            android:textColorHint="@color/c6"
+            android:textSize="30px"
+            android:gravity="right"
+            android:inputType="numberDecimal"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/gray_line"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"/>
+
+    <TextView
+        android:id="@+id/tv_logistics_query_publish_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120px"
+        android:layout_marginRight="120px"
+        android:layout_marginTop="40px"
+        android:text="提交"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:background="@drawable/background_login_btn_selector"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_logistics_query_publish_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+</LinearLayout>

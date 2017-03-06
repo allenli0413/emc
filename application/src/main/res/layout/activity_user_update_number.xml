@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="20px"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/register_pwd_et"
+            android:layout_width="0px"
+            android:layout_height="85px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:paddingLeft="20px"
+            android:inputType="number"
+            android:textColor="@color/c4"
+            android:textSize="30px"
+            android:maxLength="20"
+            android:digits="@string/num_only_digits"
+            android:textColorHint="@color/c5"/>
+
+        <LinearLayout
+            android:id="@+id/iv_xianshi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="30px"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@color/c9">
+            <ImageView
+                android:layout_width="40px"
+                android:layout_height="40px"
+                android:scaleType="fitXY"
+                android:src="@drawable/dialog_close" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

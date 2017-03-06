@@ -1,0 +1,140 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'me.tatarka.retrolambda'
+
+//key为　gradle.properties里定义的变量
+def ANDROID_BUILD_SDK_VERSION = project.getProperties().get("ANDROID_BUILD_SDK_VERSION")
+if (ANDROID_BUILD_SDK_VERSION == null) {
+    ANDROID_BUILD_SDK_VERSION = "21" //给出默认值
+}
+
+def ANDROID_BUILD_TOOLS_VERSION = project.getProperties().get("ANDROID_BUILD_TOOLS_VERSION")
+if (ANDROID_BUILD_TOOLS_VERSION == null) {
+    ANDROID_BUILD_TOOLS_VERSION = "22.0.0" //给出默认值
+}
+def ANDROID_APPLICATION_ID = project.getProperties().get("APPLICATION_ID")
+if (ANDROID_APPLICATION_ID == null) {
+    ANDROID_APPLICATION_ID = "com.emiancang.emiancang" //给出默认值
+}
+def STORE_FILE = project.getProperties().get("STORE_FILE")
+if (STORE_FILE == null) {
+    STORE_FILE = "com.zwyl.model" //给出默认值
+}
+def STORE_PASSWORD = project.getProperties().get("STORE_PASSWORD")
+if (STORE_PASSWORD == null) {
+    STORE_PASSWORD = "zwyl1234" //给出默认值
+}
+def KEY_ALIAS = project.getProperties().get("KEY_ALIAS")
+if (KEY_ALIAS == null) {
+    STORE_PASSWORD = "zwyl" //给出默认值
+}
+def KEY_PASSWORD = project.getProperties().get("KEY_PASSWORD")
+if (KEY_PASSWORD == null) {
+    KEY_PASSWORD = "zwyl1234" //给出默认值
+}
+
+android {
+    compileSdkVersion Integer.parseInt(ANDROID_BUILD_SDK_VERSION as String)
+    buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
+
+
+    //禁用预编译
+    dexOptions {
+        preDexLibraries = false
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        disable 'MissingTranslation'
+        abortOnError false
+        checkReleaseBuilds false
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            aidl.srcDirs = ['src/main/java']
+
+        }
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi'
+            universalApk false
+        }
+    }
+//    ndk {
+//        abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "mips", "mips64", "x86", "x86_64"
+//    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "com.emiancang.emiancang"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+    }
+
+    signingConfigs {
+        myConfig {
+            storeFile file(STORE_FILE)
+            storePassword STORE_PASSWORD
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+        }
+    }
+    project.archivesBaseName = project.archivesBaseName + "-code-" + defaultConfig.versionCode + "-ver-" + defaultConfig.versionName;
+    buildTypes {
+        release {
+            minifyEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg', 'proguard-rules.pro'
+            signingConfig signingConfigs.myConfig
+        }
+        debug {
+            //开启混淆
+            minifyEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            zipAlignEnabled true
+            signingConfig signingConfigs.myConfig
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':library')
+    compile files('libs/open_sdk_r5778.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'it.sephiroth.android.library.horizontallistview:hlistview:1.2.2'
+    compile files('libs/GetuiSDK2.9.3.0.jar')
+    compile project(':mayigeek')
+    compile project(':nestrefreshlayout')
+    compile files('libs/AMap_Search_V3.5.0_20160927.jar')
+    compile files('libs/zxing.jar')
+    compile files('libs/Msc.jar')
+    compile files('libs/json_simple-1.1.jar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile files('libs/hyphenatechat_3.2.1.jar')
+    compile files('libs/AMap3DMap_4.0.1_AMapNavi_1.9.3_AMapLocation_3.0.0_20161014.jar')
+    compile 'com.github.hotchemi:permissionsdispatcher:2.1.3'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile 'com.umeng.analytics:analytics:latest.integration'
+}
+repositories {
+    mavenCentral()
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:text="邀请码"
+        android:gravity="center"
+        android:textSize="26px"
+        android:background="@color/white"/>
+    <View style="@style/line_h"></View>
+</LinearLayout>

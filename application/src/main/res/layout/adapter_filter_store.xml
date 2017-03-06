@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_adapter_filter_store"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textSize="30px"
+        android:textColor="@drawable/button_word_store_filter_type"
+        android:paddingTop="5px"
+        android:paddingBottom="5px"
+        android:paddingLeft="8px"
+        android:paddingRight="8px"
+        android:layout_marginLeft="8px"
+        android:layout_marginRight="8px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/background_btn_gray_round_rect"/>
+
+</LinearLayout>

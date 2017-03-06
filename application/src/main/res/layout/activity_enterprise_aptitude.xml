@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/combination"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/combination_title"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:text="三证合一"
+                android:gravity="center"/>
+            <ImageView
+                android:id="@+id/combination_select"
+                android:layout_width="match_parent"
+                android:layout_height="5px" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/common"
+            android:layout_width="0px"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/common_title"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="1"
+                android:text="普通执照"
+                android:gravity="center"/>
+            <ImageView
+                android:id="@+id/common_select"
+                android:layout_width="match_parent"
+                android:layout_height="5px" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottom_bar_view"
+        android:layout_height="match_parent" />
+</LinearLayout>

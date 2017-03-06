@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/c1"
+    android:paddingTop="10px"
+    android:paddingBottom="10px"
+    android:paddingLeft="20px"
+    android:paddingRight="20px">
+
+    <LinearLayout
+        android:id="@+id/ll_adapter_logistics_query_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:padding="20px"
+        android:background="@color/white">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_adapter_logistics_query_avatar"
+            android:layout_width="108px"
+            android:layout_height="108px"
+            fresco:placeholderImage="@drawable/default_avater"
+            fresco:placeholderImageScaleType="fitCenter"
+            app:roundAsCircle="true"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20px">
+            
+            <TextView
+                android:id="@+id/tv_adapter_logistics_query_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="34px"
+                android:textColor="@color/c2"/>
+
+            <TextView
+                android:id="@+id/tv_adapter_logistics_query_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="24px"
+                android:textColor="@color/c4"
+                android:layout_marginTop="10px"/>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20px"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/view_adapter_logistics_query_split"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="1px"
+            android:background="@color/gray_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起送地"
+                    android:textSize="34px"
+                    android:textColor="@color/c2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到达地"
+                    android:textSize="34px"
+                    android:layout_marginTop="10px"
+                    android:textColor="@color/c2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运输单价"
+                    android:textSize="34px"
+                    android:layout_marginTop="10px"
+                    android:textColor="@color/c2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运输日期"
+                    android:textSize="34px"
+                    android:layout_marginTop="10px"
+                    android:textColor="@color/c2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到达日期"
+                    android:textSize="34px"
+                    android:layout_marginTop="10px"
+                    android:textColor="@color/c2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="80px"
+                android:paddingTop="10px">
+
+                <TextView
+                    android:id="@+id/tv_adapter_logistics_query_start_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="34px"
+                    android:textColor="@color/c2" />
+
+                <TextView
+                    android:id="@+id/tv_adapter_logistics_query_end_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="34px"
+                    android:layout_marginTop="10px"
+                    android:textColor="@color/c2" />
+
+                <TextView
+                    android:id="@+id/tv_adapter_logistics_query_single_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="34px"
+                    android:layout_marginTop="10px"
+                    android:textColor="@color/c2" />
+
+                <TextView
+                    android:id="@+id/tv_adapter_logistics_query_start_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="34px"
+                    android:layout_marginTop="10px"
+                    android:textColor="@color/c2" />
+
+                <TextView
+                    android:id="@+id/tv_adapter_logistics_query_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="34px"
+                    android:layout_marginTop="10px"
+                    android:textColor="@color/c2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

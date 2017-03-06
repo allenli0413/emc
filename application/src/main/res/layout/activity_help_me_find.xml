@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_help_me_find_content"
+        android:layout_width="match_parent"
+        android:layout_height="400px"
+        android:hint="请输入需要平台帮助的内容"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:paddingTop="10px"
+        android:textSize="28px"
+        android:gravity="top"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_help_me_find_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120px"
+        android:layout_marginRight="120px"
+        android:layout_marginTop="40px"
+        android:text="提交"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        android:background="@drawable/background_submit_btn"/>
+
+</LinearLayout>

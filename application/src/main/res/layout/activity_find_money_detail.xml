@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_line">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="20px"
+        android:paddingRight="20px">
+
+        <TextView
+        android:id="@+id/tv_find_money_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jfoewifewafjhiewoahfiewahf;ioewhnfwoieahnifewhaigohrebniofaghvnafjeafoewa"
+        android:textSize="30px"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"
+        android:textColor="@color/c2"
+        android:background="@color/white"/>
+
+        <View
+        android:id="@+id/find_money_detail_split"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="2px"
+        android:background="@color/gray_line"/>
+
+        <TextView
+            android:id="@+id/tv_find_money_detail_requirement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买需求 2016-11-09  12:23"
+            android:visibility="visible"
+            android:textColor="@color/c6"
+            android:textSize="30px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"/>
+
+    </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_mine_business_help_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:layout_marginTop="20px"
+            android:paddingTop="30px"
+            android:paddingBottom="30px"
+            android:background="@color/white"
+            android:scrollbars="none"/>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20px"
+    android:paddingLeft="20px"
+    android:paddingRight="20px">
+
+    <TextView
+        android:id="@+id/tv_adapter_find_money_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="30px"
+        android:textColor="@color/c2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10px"
+        android:layout_marginBottom="20px">
+
+        <TextView
+            android:id="@+id/tv_adapter_business_help_type_find_moeny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="26px"
+            android:textColor="@color/c4"
+            android:layout_marginRight="20px"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/tv_adapter_find_money_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="26px"
+            android:textColor="@color/c4"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/tv_adapter_find_money_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26px"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

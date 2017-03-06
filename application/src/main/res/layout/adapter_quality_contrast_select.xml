@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84px"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_adapter_quality_contrast_select_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20px"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="38px"
+            android:gravity="center_vertical"
+            android:textColor="@color/yellow_text" />
+
+        <ImageView
+            android:id="@+id/iv_adapter_quality_contrast_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/type_machine_pick"
+            android:layout_marginLeft="32px"
+            android:paddingTop="20px"
+            android:paddingBottom="20px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/iv_adapter_quality_contrast_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_select_cotton"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:layout_marginTop="16px"
+        android:paddingBottom="16px">
+
+        <TextView
+            android:id="@+id/tv_adapter_quality_contrast_select_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="30px"
+            android:textColor="@color/c4"
+            android:layout_marginBottom="10px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30px"
+            android:text="长度:"
+            android:textColor="@color/gray_text"
+            android:layout_marginBottom="10px"/>
+
+            <TextView
+                android:id="@+id/tv_adapter_quality_contrast_select_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/c4"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="10px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:text="含杂:"
+                android:textColor="@color/gray_text"
+                android:layout_marginBottom="10px"/>
+
+            <TextView
+                android:id="@+id/tv_adapter_quality_contrast_select_za"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/c4"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="10px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:text="马值:"
+                android:textColor="@color/gray_text"
+                android:layout_marginBottom="10px"/>
+
+            <TextView
+                android:id="@+id/tv_adapter_quality_contrast_select_ma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/c4"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="10px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:text="回潮:"
+                android:textColor="@color/gray_text"
+                android:layout_marginBottom="10px"/>
+
+            <TextView
+                android:id="@+id/tv_adapter_quality_contrast_select_chao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/c4"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="10px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30px"
+                android:text="强力（断裂比强度） :  "
+                android:textColor="@color/gray_text"/>
+
+            <TextView
+                android:id="@+id/tv_adapter_quality_contrast_select_strength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textSize="30px"
+                android:textColor="@color/c4"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="@color/c1"/>
+
+</LinearLayout>

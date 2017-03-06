@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--slideView-->
+    <color name="dimgrey">#E22F2F</color>
+    <color name="light_red">#E84A40</color>
+    <color name="floralwhite">#FFFAF0</color>
+</resources>

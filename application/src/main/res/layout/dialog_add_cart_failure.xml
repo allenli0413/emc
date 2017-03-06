@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@drawable/background_white_round_rect">
+
+    <LinearLayout
+        android:minWidth="510px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="40px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加入购物车失败"
+            android:textSize="34px"
+            android:padding="20px"
+            android:textColor="@color/c2"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_dialog_add_cart_falure_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="棉花不支持在线交易，不能加入购物车！"
+            android:textSize="30px"
+            android:textColor="@color/c4"/>
+
+        <TextView
+            android:id="@+id/tv_dialog_add_cart_falure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:padding="20px"
+            android:gravity="center"
+            android:text="知道了"
+            android:textColor="@color/green"
+            android:textSize="34px"/>
+
+    </LinearLayout>
+
+</LinearLayout>
